@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Exercicio 0</title>
-</head>
-<body>
-<script src="index.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Exercicio 01</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Eleições</legend>
+        <div>
+          <label for="votos_total">Total de Votos</label>
+          <input type="number" id="votos_total" />
+        </div>
+        <div>
+          <label for="votos_branco">Votos em Branco</label>
+          <input type="number" id="votos_branco" />
+        </div>
+        <div>
+          <label for="votos_nulos">Votos nulos</label>
+          <input type="number" id="votos_nulos" />
+        </div>
+        <div>
+          <label for="votos_validos">Votos Válidos</label>
+          <input type="number" id="votos_validos" />
+        </div>
+        <button id="submit" type="button" onclick="calulaPorcentual() ">Calcular Porcentual</button>
+      </fieldset>
+    </form>
+    <div class="resultados">
+      <div>
+          <p>Votos em branco (%): <span id="porcentual_branco"></span></p>
+      </div>
+      <div>
+          <p>Votos nulos (%): <span id="porcentual_nulo"></span></p>
+      </div>
+      <div>
+          <p>Votos válidos (%): <span id="porcentual_validos"></span></p>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
