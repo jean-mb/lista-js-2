@@ -1,0 +1,54 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+fieldset{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+fieldset div {
+    /* margin-inline: 13rem; */
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 35%;
+}
+
+fieldset button{
+    width: 10rem;
+    height: 2rem;
+}
+
+input{
+    width: 5rem;
+    height: 1.2rem;
+    text-align: center;
+}
+
+#mensagem{
+    font-weight: bold;
+    margin-block: 2rem;
+}
+
+.positivo{
+    color: green;
+}
+
+.negativo{
+    color: red;
+}
