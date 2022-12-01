@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Exercicio 0</title>
-</head>
-<body>
-<script src="index.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Exercicio 02</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Cálculo de Horas</legend>
+        <div>
+          <label for="horas_trabalhadas">Horas Trabalhadas</label>
+          <input type="number" id="horas_trabalhadas" />
+        </div>
+        <div>
+          <label for="valor_hora">Valor da Hora </label>
+          <input type="text" id="valor_hora" />
+        </div>
+        <button id="submit" type="button" onclick="calculaHoras() ">Calcular Horas</button>
+      </fieldset>
+    </form>
+    <div class="resultados">
+      <div>
+          <p>Sálario Total: R$  <span id="salario"></span></p>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
