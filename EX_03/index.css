@@ -45,10 +45,10 @@ input{
     margin-block: 2rem;
 }
 
-.positivo{
+.mensagem p{
     color: green;
 }
 
-.negativo{
+p.negativo{
     color: red;
 }

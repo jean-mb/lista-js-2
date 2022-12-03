@@ -13,12 +13,9 @@ function calculaSaldo(){
     campoSaldo.innerText = saldo_atual;
     if (saldo_atual >=0){
         mensagem.innerText = "Saldo Positivo";
-        mensagem.classList.add("positivo");
         mensagem.classList.remove("negativo");
     }else{
         mensagem.innerText = "Saldo Negativo";
         mensagem.classList.add("negativo");
-        mensagem.classList.remove("positivo");
-
     }
 }
